@@ -6,9 +6,9 @@ public class BackGroundController : MonoBehaviour {
     //スクロール速度
     private float scrollSpeed = -0.03f;
     //背景終了位置
-    private float deadLine = -16;
+    private float deadLine = -23;
     //背景開始位置
-    private float startLine = 15;
+    private float startLine = 23;
 
 	// Use this for initialization
 	void Start () {
@@ -21,7 +21,7 @@ public class BackGroundController : MonoBehaviour {
         transform.Translate(this.scrollSpeed, 0, 0);
         //画面外にでたら、画面右端に移動
         if(transform.position.x < this.deadLine) {
-            transform.position = new Vector2(this.startLine, 0 );
+            transform.position = new Vector2(this.startLine, 1 );
 
         }
 

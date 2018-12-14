@@ -22,9 +22,10 @@ public class CubeGenerator : MonoBehaviour {
     //キューブの生成個数の上限
     private int maxBlockNum = 4;
 
+
 	// Use this for initialization
 	void Start () {
-		
+        
 	}
 	
 	// Update is called once per frame
@@ -46,4 +47,6 @@ public class CubeGenerator : MonoBehaviour {
             this.span = this.offsetX + this.spaceX * n;
         }
 	}
+    
+
 }
